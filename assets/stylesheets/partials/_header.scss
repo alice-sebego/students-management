@@ -1,0 +1,36 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  margin-bottom: 50px;
+  font-family: $primary-font;
+  
+  img {
+    width: 200px;
+  }
+
+  ul {
+    display: flex;
+    list-style-type: none;
+
+    li {
+      display: inline-block;
+      margin-left: 10px;
+      padding: 3px;
+      border-bottom: 3px solid $dark-blue;
+      transition: border-bottom .4s ease-in-out;
+      cursor: pointer;
+
+      &:hover {
+        border-bottom: 3px solid $medium-blue;
+      }
+
+      a {
+        text-decoration: none;
+        color: $dark-blue;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
