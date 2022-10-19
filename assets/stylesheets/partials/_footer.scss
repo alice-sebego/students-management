@@ -1,0 +1,39 @@
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: $dark-blue;
+  color: white;
+  font-family: $primary-font;
+
+  .sub-footer {
+    .logo {
+      width: 50px;
+    }
+
+    .copyright {
+      font-size: 12px;
+      letter-spacing: 0.72px;
+    }
+
+    h3 {
+      text-transform: uppercase;
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
+
+    .legacies {
+      list-style-type: none;
+      font-size: 14px;
+      .legacy {
+        display: block;
+        margin-bottom: 5px;
+      }
+    }
+
+    &.title-footer {
+      display: flex;
+      align-items: center;
+    }
+  }
+}
