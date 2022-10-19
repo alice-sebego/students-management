@@ -120,4 +120,40 @@ footer .sub-footer.title-footer {
   border-radius: 0 25px;
 }
 
+.connection,
+.register {
+  min-height: 50vh;
+}
+.connection .container,
+.register .container {
+  padding: 50px;
+}
+.connection .container form,
+.register .container form {
+  max-width: 450px;
+}
+.connection .container form fieldset,
+.register .container form fieldset {
+  border: none;
+  padding: 5px 0;
+}
+.connection .container form fieldset label,
+.register .container form fieldset label {
+  min-width: 85px;
+  display: inline-block;
+}
+.connection .container form fieldset input[type=text],
+.register .container form fieldset input[type=text] {
+  padding: 3px;
+}
+.connection .container form input[type=submit],
+.register .container form input[type=submit] {
+  border: none;
+  background-color: #fb8500;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+
 /*# sourceMappingURL=style.css.map */

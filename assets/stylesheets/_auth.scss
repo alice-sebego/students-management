@@ -1,0 +1,33 @@
+.connection,
+.register {
+  min-height: 50vh;
+  .container {
+    padding: 50px;
+    form {
+      max-width: 450px;
+
+      fieldset {
+        border: none;
+        padding: 5px 0;
+
+        label {
+          min-width: 85px;
+          display: inline-block;
+        }
+
+        input[type="text"] {
+          padding: 3px;
+        }
+      }
+
+      input[type="submit"] {
+        border: none;
+        background-color: $dark-orange;
+        color: white;
+        padding: 5px 10px;
+        border-radius: 5px;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
