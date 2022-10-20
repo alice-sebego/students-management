@@ -20,7 +20,7 @@ session_start();
             <?php echo $_SESSION['feedback-register']; ?>    
             </p>
             <?php endif;?>
-            <form action="" class="login-form">
+            <form action="treatment-login.php" class="login-form" method="post">
                 <fieldset>
                     <label for="email">Email  </label>
                     <input type="email" name="email" id="email">
@@ -32,6 +32,11 @@ session_start();
                 <input type="submit" name="submit" value="Me connecter">
             </form>
             <p class="register">Pas de compte ? <a href="register.php" title="inscrivez-vous">Inscrivez-vous</a></p>
+            <?php if(isset($_SESSION['feedback-login'])): ?>    
+            <p class="failed">
+            <?php echo $_SESSION['feedback-login']; ?>    
+            </p>
+            <?php endif;?>
         </div>
     </main>
     <?php include_once "partial/footer.php" ?>

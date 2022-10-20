@@ -11,11 +11,16 @@ header {
   display: flex;
   justify-content: space-between;
   padding: 10px 20px;
-  margin-bottom: 50px;
   font-family: "Open Sans", sans-serif;
 }
 header img {
   width: 100px;
+}
+header .student-logged {
+  margin-top: 10px;
+}
+header .student-logged span {
+  font-weight: bold;
 }
 header ul {
   display: flex;

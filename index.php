@@ -1,6 +1,5 @@
 <?php
 session_start();
-//if(isset($_SESSION['feedback'])) echo $_SESSION['feedback'];
  ?>
 <!DOCTYPE html>
 <html lang="fr">

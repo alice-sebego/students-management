@@ -2,11 +2,17 @@ header {
   display: flex;
   justify-content: space-between;
   padding: 10px 20px;
-  margin-bottom: 50px;
   font-family: $primary-font;
   
   img {
     width: 100px;
+  }
+
+  .student-logged{
+    margin-top: 10px;
+    span{
+      font-weight: bold;
+    }
   }
 
   ul {
