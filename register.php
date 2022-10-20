@@ -1,3 +1,6 @@
+<?php
+session_start(); 
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,7 +15,12 @@
     <main class="register">
         <h1>Inscription</h1>
         <div class="container">
-            <form action="inc/treatment-register.php" class="register-form" method="post">
+            <?php if(isset($_SESSION['feedback-register'])): ?>    
+            <p class="failed">
+            <?php echo $_SESSION['feedback-register']; ?>    
+            </p>
+            <?php endif;?>
+            <form action="treatment-register.php" class="register-form" method="post">
                 <fieldset>
                     <label for="firstname">Prénom  </label>
                     <input type="text" name="firstname" id="firstname">

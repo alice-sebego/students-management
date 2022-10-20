@@ -1,3 +1,6 @@
+<?php 
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,6 +15,11 @@
     <main class="connection">
         <h1>Connexion</h1>
         <div class="container">
+            <?php if(isset($_SESSION['feedback-register'])): ?>    
+            <p class="success">
+            <?php echo $_SESSION['feedback-register']; ?>    
+            </p>
+            <?php endif;?>
             <form action="" class="login-form">
                 <fieldset>
                     <label for="email">Email  </label>

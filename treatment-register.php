@@ -1,5 +1,6 @@
-<?php 
-include_once "db.php";
+<?php
+session_start(); 
+include_once "inc/db.php";
 
  if( isset($_POST['submit']) &&
     isset($_POST['lastname']) && 
@@ -25,13 +26,22 @@ include_once "db.php";
     $addressOk = $mysqli->real_escape_string($address);
     $telephoneOk = $mysqli->real_escape_string($telephone);
 
-    $req = "INSERT INTO students 
-            VALUES(NULL, '$firstnameOk', '$lastnameOk', '$emailOk', '$passwordOk', '$telephoneOk', '$addressOk')";
+    $req = "SELECT * FROM students WHERE email = '$emailOk'";
     $query = $mysqli->query($req);
-    $_SESSION['feedback'] = "<p class='success'>L'étudiant a bien été ajouté en BDD</p>";
-    header("Location: http://localhost/dwwm/students-management/index.php");
+    $nb = $query->num_rows;
+
+    if($nb < 1){
+        $req = "INSERT INTO students 
+                VALUES(NULL, '$firstnameOk', '$lastnameOk', '$emailOk', '$passwordOk', '$telephoneOk', '$addressOk')";
+        $query = $mysqli->query($req);
+        $_SESSION['feedback-register'] = "Vous êtes bien inscrit(e)";
+        header("Location: login.php");
+    } else {
+        $_SESSION['feedback-register'] = "Un compte est déjà associé à cet email";
+        header("Location: register.php");
+    }
 } else {
-    $_SESSION['feedback'] = '<p class="failed">Oups ! Problème</p>';
-    header("Location: http://localhost/dwwm/students-management/index.php");
+    $_SESSION['feedback-register'] = "Oups ! Il manque des éléments dans le formulaire";
+    header("Location: register.php");
 }
 ?>
