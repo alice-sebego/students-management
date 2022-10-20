@@ -90,6 +90,7 @@ footer .sub-footer.title-footer {
 .main-content .presentation {
   display: flex;
   font-family: "Open Sans", sans-serif;
+  color: #023047;
   margin-bottom: 50px;
 }
 .main-content .presentation .description {
@@ -124,6 +125,26 @@ footer .sub-footer.title-footer {
   overflow: hidden;
   max-height: 350px;
   border-radius: 0 25px;
+}
+.main-content .container {
+  font-family: "Open Sans", sans-serif;
+  color: #023047;
+}
+.main-content .container .no-logged a {
+  display: inline-block;
+  padding: 8px;
+  margin-top: 10px;
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #fb8500;
+  font-weight: 700;
+  letter-spacing: 0.72px;
+  transition: background-color 0.4s ease-in-out;
+}
+.main-content .container .no-logged a:hover {
+  background-color: #c86a00;
 }
 
 table {

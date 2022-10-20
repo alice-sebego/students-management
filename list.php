@@ -55,7 +55,7 @@ session_start();
                     </tbody>
                 </table>
             <?php else: ?>
-                <p>Vous devez vous connecter pour accèder à la liste <br>
+                <p class="no-logged">Vous devez vous connecter pour accéder à la liste <br>
                     <a href="login.php" title="connectez-vous">Connectez-vous</a>
                 </p>
             <?php endif; ?>    
