@@ -1,7 +1,7 @@
 <footer>
     <div class="sub-footer">
         <img class="logo" src="https://cdn.svgporn.com/logos/nightwatch.svg" alt="logo nightwatch for example">
-        <p class="copyright">2022 | Cook Study</p>
+        <p class="copyright"><?php echo date("Y") ?> | Cook Study</p>
     </div>
     <div class="sub-footer title-footer">
         <h3>Plateforme de gestion des étudiants</h3>
