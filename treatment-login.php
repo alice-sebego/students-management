@@ -26,6 +26,8 @@ if(isset($_POST['submit']) &&
     }
     if ($nb > 0) {
       header("Location: index.php");
+      $_SESSION['feedback-login'] = "";
+      $_SESSION['feedback-register'] = "";
     } else {
       $_SESSION['feedback-login'] = "Pas de compte associé à cet email";
       header("Location: login.php");

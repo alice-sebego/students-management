@@ -15,7 +15,7 @@ session_start();
     <main class="connection">
         <h1>Connexion</h1>
         <div class="container">
-            <?php if(isset($_SESSION['feedback-register'])): ?>    
+            <?php if(isset($_SESSION['feedback-register']) && !empty($_SESSION['feedback-register'])): ?>    
             <p class="success">
             <?php echo $_SESSION['feedback-register']; ?>    
             </p>
@@ -32,7 +32,7 @@ session_start();
                 <input type="submit" name="submit" value="Me connecter">
             </form>
             <p class="register">Pas de compte ? <a href="register.php" title="inscrivez-vous">Inscrivez-vous</a></p>
-            <?php if(isset($_SESSION['feedback-login'])): ?>    
+            <?php if(isset($_SESSION['feedback-login']) && !empty($_SESSION['feedback-login'])): ?>    
             <p class="failed">
             <?php echo $_SESSION['feedback-login']; ?>    
             </p>

@@ -15,7 +15,7 @@ session_start();
     <main class="register">
         <h1>Inscription</h1>
         <div class="container">
-            <?php if(isset($_SESSION['feedback-register'])): ?>    
+            <?php if(isset($_SESSION['feedback-register']) && !empty($_SESSION['feedback-register'])): ?>    
             <p class="failed">
             <?php echo $_SESSION['feedback-register']; ?>    
             </p>
