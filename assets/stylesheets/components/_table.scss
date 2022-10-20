@@ -1,0 +1,39 @@
+table {
+  font-family: $primary-font;
+  color: $dark-blue;
+
+  thead {
+    th {
+      text-align: left;
+      padding: 3px;
+    }
+  }
+
+  tbody {
+    td {
+      padding: 3px 5px;
+
+      &.address {
+        font-size: 12px;
+      }
+
+      &.email {
+        a {
+          color: $dark-blue;
+          &:hover {
+            color: $dark-orange;
+          }
+        }
+      }
+
+      &.update,
+      &.delete {
+        text-align: center;
+        img {
+          width: 25px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

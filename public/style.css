@@ -126,6 +126,34 @@ footer .sub-footer.title-footer {
   border-radius: 0 25px;
 }
 
+table {
+  font-family: "Open Sans", sans-serif;
+  color: #023047;
+}
+table thead th {
+  text-align: left;
+  padding: 3px;
+}
+table tbody td {
+  padding: 3px 5px;
+}
+table tbody td.address {
+  font-size: 12px;
+}
+table tbody td.email a {
+  color: #023047;
+}
+table tbody td.email a:hover {
+  color: #fb8500;
+}
+table tbody td.update, table tbody td.delete {
+  text-align: center;
+}
+table tbody td.update img, table tbody td.delete img {
+  width: 25px;
+  cursor: pointer;
+}
+
 .connection,
 .register {
   min-height: 50vh;
