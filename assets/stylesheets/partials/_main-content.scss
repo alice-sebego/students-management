@@ -11,6 +11,7 @@
   .presentation {
     display: flex;
     font-family: $primary-font;
+    margin-bottom: 50px;
 
     .description {
       width: 50%;
@@ -22,7 +23,7 @@
         margin-bottom: 15px;
       }
 
-      .login {
+      .list-acces {
         display: inline-block;
         padding: 3px;
         margin-top: 10px;

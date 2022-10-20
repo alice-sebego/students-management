@@ -8,7 +8,9 @@
     <nav>
         <ul>
             <li class="nav login"><a href="login.php">Connexion</a></li>
+            <?php if(isset($_SESSION['auth']['firstname'])): ?>
             <li class="nav logout"><a href="logout.php">Déconnexion</a></li>
+            <?php endif;?>
         </ul>
     </nav>
 </header>

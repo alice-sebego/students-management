@@ -90,6 +90,7 @@ footer .sub-footer.title-footer {
 .main-content .presentation {
   display: flex;
   font-family: "Open Sans", sans-serif;
+  margin-bottom: 50px;
 }
 .main-content .presentation .description {
   width: 50%;
@@ -100,7 +101,7 @@ footer .sub-footer.title-footer {
   color: #219ebc;
   margin-bottom: 15px;
 }
-.main-content .presentation .description .login {
+.main-content .presentation .description .list-acces {
   display: inline-block;
   padding: 3px;
   margin-top: 10px;
@@ -112,10 +113,10 @@ footer .sub-footer.title-footer {
   font-weight: 700;
   text-transform: uppercase;
 }
-.main-content .presentation .description .login:hover {
+.main-content .presentation .description .list-acces:hover {
   border-bottom: 3px solid #219ebc;
 }
-.main-content .presentation .description .login:hover {
+.main-content .presentation .description .list-acces:hover {
   border-bottom: 3px solid #219ebc;
 }
 .main-content .presentation .illustration {
