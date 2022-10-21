@@ -1,5 +1,6 @@
 <?php 
 session_start();
+if(!isset($_SESSION['auth']['firstname'])) header("Location: index.php");
 $title = "Supprimer";
 include_once "inc/db.php";
 include_once "inc/get-student.php";
