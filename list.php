@@ -50,10 +50,6 @@ $title = "Liste des étudiants";
                     ?>
                     </tbody>
                 </table>
-                <?php if(isset($_SESSION['feedback_update'])){
-                    echo $_SESSION['feedback_update'];
-                }
-                 ?>
             <?php else: ?>
                 <p class="no-logged">Vous devez vous connecter pour accéder à la liste <br>
                     <a href="login.php" title="connectez-vous">Connectez-vous</a>

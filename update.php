@@ -33,7 +33,7 @@ include_once "inc/get-student.php";
                 <input type="submit" name="submit" value="modifier">
             </form>
             <?php else: ?>
-                <p><?php echo $feedback; ?></p>
+                <p class="feedback"><?php echo $feedback; ?></p>
             <?php endif; ?>    
         </div>
     </main>
