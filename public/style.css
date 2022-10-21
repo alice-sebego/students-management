@@ -179,7 +179,7 @@ footer .sub-footer.title-footer {
 }
 
 table {
-  margin: 25px 0;
+  margin: 25px auto;
   font-family: "Open Sans", sans-serif;
   color: #023047;
 }
@@ -187,26 +187,32 @@ table caption {
   padding: 15px 0;
   text-transform: uppercase;
 }
-table thead th {
-  text-align: left;
-  padding: 3px;
+table thead tr {
+  background-color: rgba(142, 202, 230, 0.2);
 }
-table tbody td {
+table thead tr th {
+  text-align: left;
+  padding: 5px 3px;
+}
+table tbody tr:hover {
+  background-color: #ffdb83;
+}
+table tbody tr td {
   padding: 3px 5px;
 }
-table tbody td.address {
+table tbody tr td.address {
   font-size: 12px;
 }
-table tbody td.email a {
+table tbody tr td.email a {
   color: #023047;
 }
-table tbody td.email a:hover {
+table tbody tr td.email a:hover {
   color: #fb8500;
 }
-table tbody td.update, table tbody td.delete {
+table tbody tr td.update, table tbody tr td.delete {
   text-align: center;
 }
-table tbody td.update img, table tbody td.delete img {
+table tbody tr td.update img, table tbody tr td.delete img {
   width: 25px;
   cursor: pointer;
 }

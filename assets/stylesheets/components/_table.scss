@@ -1,5 +1,5 @@
 table {
-  margin: 25px 0;
+  margin: 25px auto;
   font-family: $primary-font;
   color: $dark-blue;
 
@@ -9,35 +9,43 @@ table {
   }
 
   thead {
-    th {
-      text-align: left;
-      padding: 3px;
+    tr {
+      background-color: rgba($light-blue, 0.2);
+      th {
+        text-align: left;
+        padding: 5px 3px;
+      }
     }
   }
 
   tbody {
-    td {
-      padding: 3px 5px;
-
-      &.address {
-        font-size: 12px;
+    tr {
+      &:hover {
+        background-color: lighten($light-orange, 25);
       }
-
-      &.email {
-        a {
-          color: $dark-blue;
-          &:hover {
-            color: $dark-orange;
+      td {
+        padding: 3px 5px;
+  
+        &.address {
+          font-size: 12px;
+        }
+  
+        &.email {
+          a {
+            color: $dark-blue;
+            &:hover {
+              color: $dark-orange;
+            }
           }
         }
-      }
-
-      &.update,
-      &.delete {
-        text-align: center;
-        img {
-          width: 25px;
-          cursor: pointer;
+  
+        &.update,
+        &.delete {
+          text-align: center;
+          img {
+            width: 25px;
+            cursor: pointer;
+          }
         }
       }
     }
