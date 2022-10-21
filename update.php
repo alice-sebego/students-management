@@ -23,10 +23,6 @@ include_once "inc/get-student.php";
                     <input type="text" name="lastname" id="lastname" value="<?php echo $lastname; ?>">
                 </fieldset>
                 <fieldset>
-                    <label for="email">Email  </label>
-                    <input type="email" name="email" id="email" value="<?php echo $email; ?>">
-                </fieldset>
-                <fieldset>
                     <label for="telephone">Téléphone  </label>
                     <input type="tel" name="telephone" id="telephone" value="<?php echo $telephone; ?>">
                 </fieldset>
