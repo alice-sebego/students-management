@@ -36,9 +36,9 @@
         font-weight: 700;
         text-transform: uppercase;
 
-      &:hover {
-        border-bottom: 3px solid $medium-blue;
-      }
+        &:hover {
+          border-bottom: 3px solid $medium-blue;
+        }
 
         &:hover {
           border-bottom: 3px solid $medium-blue;
@@ -56,6 +56,7 @@
   .container {
     font-family: $primary-font;
     color: $dark-blue;
+
     .no-logged {
       a {
         display: inline-block;
@@ -67,12 +68,48 @@
         text-transform: uppercase;
         background-color: $dark-orange;
         font-weight: 700;
-        letter-spacing: .72px;
-        transition: background-color .4s ease-in-out;
+        letter-spacing: 0.72px;
+        transition: background-color 0.4s ease-in-out;
 
-        &:hover{
+        &:hover {
           background-color: darken($dark-orange, 10);
         }
+      }
+    }
+
+    .form-update {
+      margin: auto;
+      max-width: 650px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      fieldset {
+        border: none;
+        padding: 5px 0;
+
+        label {
+          min-width: 85px;
+          display: inline-block;
+        }
+
+        input[type="text"] {
+          padding: 3px;
+        }
+      }
+
+      input[type="submit"] {
+        width: 250px;
+        margin-top: 20px;
+        padding: 5px 10px;
+        font-size: 15px;
+        font-weight: 700;
+        letter-spacing: 0.72px;
+        border: none;
+        background-color: $dark-orange;
+        color: white;
+        border-radius: 5px;
+        text-transform: uppercase;
       }
     }
   }

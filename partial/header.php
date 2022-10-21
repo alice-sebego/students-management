@@ -9,7 +9,7 @@
         <ul>
             <?php if(!isset($_SESSION['auth']['firstname'])): ?>
                 <li class="nav login"><a href="login.php">Connexion</a></li>
-                <li class="nav register"><a href="register.php">Inscription</a></li>
+                <li class="nav registration"><a href="register.php">Inscription</a></li>
             <?php else: ?>
                 <li class="nav logout"><a href="logout.php">Déconnexion</a></li>
             <?php endif;?>

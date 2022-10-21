@@ -1,6 +1,12 @@
 table {
+  margin: 25px 0;
   font-family: $primary-font;
   color: $dark-blue;
+
+  caption {
+    padding: 15px 0;
+    text-transform: uppercase;
+  }
 
   thead {
     th {

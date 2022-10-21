@@ -15,6 +15,7 @@ $title = "Liste des étudiants";
             <?php if(isset($_SESSION['auth']['firstname']) && !empty($_SESSION['auth']['firstname'])): ?>    
                 <?php include_once "inc/db.php" ?>
                 <table class="student-list">
+                    <caption>Annuaire des étudiants</caption>
                     <thead>
                         <tr>
                             <th>Prénom</th>
