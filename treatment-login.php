@@ -22,6 +22,7 @@ if(isset($_POST['submit']) &&
         $_SESSION['auth']['id'] = $row['id'];
         $_SESSION['auth']['firstname'] = $row['firstname'];
         $_SESSION['auth']['lastname'] = $row['lastname'];
+        $_SESSION['auth']['picture'] = $row['picture'];
       }
     }
     if ($nb > 0) {

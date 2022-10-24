@@ -18,6 +18,7 @@ if(isset($_GET['id'])) {
             $telephone = $row['telephone'];
             $address = $row['address'];
             $email = $row['email'];
+            $picture = $row['picture'];
         }
     } else {
         $feedback = "Pas de compte associé à l'utilisateur n° $idStudent";

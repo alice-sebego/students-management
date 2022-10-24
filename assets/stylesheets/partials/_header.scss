@@ -3,15 +3,27 @@ header {
   justify-content: space-between;
   padding: 10px 20px;
   font-family: $primary-font;
-  
+
   img {
     width: 100px;
   }
 
-  .student-logged{
+  .student-logged {
     margin-top: 10px;
-    span{
+
+    .user {
       font-weight: bold;
+    }
+    .profile {
+      display: inline-block;
+      vertical-align: middle;
+      border: 1px solid #ccc;
+      border-radius: 50%;
+      margin-left: 8px;
+
+      img{
+        width: 45px;
+      }
     }
   }
 
@@ -24,7 +36,7 @@ header {
       margin-left: 10px;
       padding: 3px;
       border-bottom: 3px solid $dark-blue;
-      transition: border-bottom .4s ease-in-out;
+      transition: border-bottom 0.4s ease-in-out;
       cursor: pointer;
 
       &:hover {

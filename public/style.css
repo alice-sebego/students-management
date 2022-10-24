@@ -19,8 +19,18 @@ header img {
 header .student-logged {
   margin-top: 10px;
 }
-header .student-logged span {
+header .student-logged .user {
   font-weight: bold;
+}
+header .student-logged .profile {
+  display: inline-block;
+  vertical-align: middle;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  margin-left: 8px;
+}
+header .student-logged .profile img {
+  width: 45px;
 }
 header ul {
   display: flex;
@@ -200,6 +210,9 @@ table tbody tr:hover {
 table tbody tr td {
   padding: 3px 5px;
 }
+table tbody tr td.picture {
+  width: 45px;
+}
 table tbody tr td.address {
   font-size: 12px;
 }
@@ -264,30 +277,6 @@ table tbody tr td.update img, table tbody tr td.delete img {
   padding: 5px;
   border: 1px solid rgba(2, 48, 71, 0.8);
   border-radius: 3px;
-}
-.connection .container form fieldset .file-input,
-.register .container form fieldset .file-input {
-  color: transparent;
-}
-.connection .container form fieldset .file-input::-webkit-file-upload-button,
-.register .container form fieldset .file-input::-webkit-file-upload-button {
-  visibility: hidden;
-}
-.connection .container form fieldset .file-input::before,
-.register .container form fieldset .file-input::before {
-  content: "Choisir une image";
-  color: #023047;
-  display: inline-block;
-  width: 220px;
-  padding: 5px;
-  border: 1px solid #023047;
-  border-radius: 3px;
-  white-space: nowrap;
-  font-weight: 700;
-  font-size: 14px;
-  text-align: center;
-  -webkit-user-select: none;
-  cursor: pointer;
 }
 .connection .container form input[type=submit],
 .register .container form input[type=submit] {

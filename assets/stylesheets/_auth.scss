@@ -38,29 +38,29 @@
           border-radius: 3px;
         }
 
-        .file-input {
-          color: transparent;
+        // .file-input {
+        //   color: transparent;
 
-          &::-webkit-file-upload-button {
-            visibility: hidden;
-          }
+        //   &::-webkit-file-upload-button {
+        //     visibility: hidden;
+        //   }
 
-          &::before {
-            content: "Choisir une image";
-            color: $dark-blue;
-            display: inline-block;
-            width: 220px;
-            padding: 5px;
-            border: 1px solid $dark-blue;
-            border-radius: 3px;
-            white-space: nowrap;
-            font-weight: 700;
-            font-size: 14px;
-            text-align: center;
-            -webkit-user-select: none;
-            cursor: pointer;
-          }
-        }
+        //   &::before {
+        //     content: "Choisir une image";
+        //     color: $dark-blue;
+        //     display: inline-block;
+        //     width: 220px;
+        //     padding: 5px;
+        //     border: 1px solid $dark-blue;
+        //     border-radius: 3px;
+        //     white-space: nowrap;
+        //     font-weight: 700;
+        //     font-size: 14px;
+        //     text-align: center;
+        //     -webkit-user-select: none;
+        //     cursor: pointer;
+        //   }
+        // }
       }
 
       input[type="submit"] {

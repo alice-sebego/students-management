@@ -15,7 +15,7 @@ $title = "Inscription";
             <?php echo $_SESSION['feedback-register']; ?>    
             </p>
             <?php endif;?>
-            <form action="treatment-register.php" class="register-form" method="post">
+            <form action="treatment-register.php" class="register-form" method="post" enctype="multipart/form-data">
                 <fieldset>
                     <label for="firstname">Prénom  </label>
                     <input type="text" name="firstname" id="firstname" autocomplete="given-name">
@@ -42,13 +42,18 @@ $title = "Inscription";
                 </fieldset>
                 <fieldset>
                     <label for="picture">Photo de profil  </label>
-                    <input type="file" name="picture" id="picture" class="file-input" accept="image/*">
+                    <input type="file" name="picture" id="picture" class="file-input" accept="image/jpeg, image/jpg, image/png, image/gif">
                 </fieldset>
                 <input type="submit" name="submit" value="Je m'inscris">
             </form>
             <p class="login-link">Déjà un compte ? <a href="login.php" title="connectez-vous">Connectez-vous</a></p>
         </div>
     </main>
+    <div>
+        <?php
+        if(isset($_SESSION['picture-profile'])) echo $_SESSION['picture-profile'];
+         ?>
+    </div>
     <?php include_once "partial/footer.php" ?>
 </body>
 </html>

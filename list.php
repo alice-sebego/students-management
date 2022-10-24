@@ -18,6 +18,7 @@ $title = "Liste des étudiants";
                     <caption>Annuaire des étudiants</caption>
                     <thead>
                         <tr>
+                            <th>Photo</th>
                             <th>Prénom</th>
                             <th>Nom</th>
                             <th>Adresse</th>
@@ -36,13 +37,14 @@ $title = "Liste des étudiants";
                         while($row = $queryGet->fetch_array()){
                             echo "
                             <tr>
+                                <td>". strlen($row['picture'])  ."</td>
                                 <td>". $row['firstname']."</td>
-                                <td>". strtoupper($row['lastname'])."</td>
-                                <td class='address'>". $row['address']."</td>
-                                <td>". $row['telephone']."</td>
-                                <td class='email'><a href='mailto:".$row['email']."'>". $row['email']."</a></td>
-                                <td class='update'><a href='update.php?id=". $row['id']."' title='Modifier ".$row['firstname']."'><img src='./assets/images/edit.svg'></a></td>
-                                <td class='delete'><a href='delete.php?id=". $row['id']."' title='Supprimer ".$row['firstname']."'><img src='./assets/images/delete.svg'></a></td>
+                                <td>". strtoupper($row['lastname']) ."</td>
+                                <td class='address'>". $row['address'] ."</td>
+                                <td>". $row['telephone'] ."</td>
+                                <td class='email'><a href='mailto:". $row['email'] ."'>". $row['email'] ."</a></td>
+                                <td class='update'><a href='update.php?id=". $row['id'] ."' title='Modifier ". $row['firstname'] ."'><img src='./assets/images/edit.svg'></a></td>
+                                <td class='delete'><a href='delete.php?id=". $row['id'] ."' title='Supprimer ". $row['firstname'] ."'><img src='./assets/images/delete.svg'></a></td>
                             </tr>      
                             ";
                         }
