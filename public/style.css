@@ -222,6 +222,7 @@ table tbody tr td.update img, table tbody tr td.delete img {
   min-height: 50vh;
   font-family: "Open Sans", sans-serif;
   color: #023047;
+  padding-bottom: 75px;
 }
 .connection h1,
 .register h1 {
@@ -277,14 +278,16 @@ table tbody tr td.update img, table tbody tr td.delete img {
   content: "Choisir une image";
   color: #023047;
   display: inline-block;
+  width: 220px;
   padding: 5px;
   border: 1px solid #023047;
   border-radius: 3px;
   white-space: nowrap;
-  -webkit-user-select: none;
-  cursor: pointer;
   font-weight: 700;
   font-size: 14px;
+  text-align: center;
+  -webkit-user-select: none;
+  cursor: pointer;
 }
 .connection .container form input[type=submit],
 .register .container form input[type=submit] {

@@ -3,6 +3,7 @@
   min-height: 50vh;
   font-family: $primary-font;
   color: $dark-blue;
+  padding-bottom: 75px;
 
   h1 {
     font-family: $title-font;
@@ -48,14 +49,16 @@
             content: "Choisir une image";
             color: $dark-blue;
             display: inline-block;
+            width: 220px;
             padding: 5px;
             border: 1px solid $dark-blue;
             border-radius: 3px;
             white-space: nowrap;
-            -webkit-user-select: none;
-            cursor: pointer;
             font-weight: 700;
             font-size: 14px;
+            text-align: center;
+            -webkit-user-select: none;
+            cursor: pointer;
           }
         }
       }
