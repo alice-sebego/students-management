@@ -220,14 +220,26 @@ table tbody tr td.update img, table tbody tr td.delete img {
 .connection,
 .register {
   min-height: 50vh;
+  font-family: "Open Sans", sans-serif;
+  color: #023047;
+}
+.connection h1,
+.register h1 {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
 }
 .connection .container,
 .register .container {
-  padding: 50px;
+  padding: 15px 50px 50px;
 }
 .connection .container form,
 .register .container form {
-  max-width: 450px;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 3px solid #eee;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px #ccc;
 }
 .connection .container form fieldset,
 .register .container form fieldset {
@@ -236,21 +248,82 @@ table tbody tr td.update img, table tbody tr td.delete img {
 }
 .connection .container form fieldset label,
 .register .container form fieldset label {
-  min-width: 85px;
+  min-width: 120px;
   display: inline-block;
 }
 .connection .container form fieldset input[type=text],
-.register .container form fieldset input[type=text] {
-  padding: 3px;
+.connection .container form fieldset input[type=password],
+.connection .container form fieldset input[type=email],
+.connection .container form fieldset input[type=tel],
+.register .container form fieldset input[type=text],
+.register .container form fieldset input[type=password],
+.register .container form fieldset input[type=email],
+.register .container form fieldset input[type=tel] {
+  min-width: 220px;
+  padding: 5px;
+  border: 1px solid rgba(2, 48, 71, 0.8);
+  border-radius: 3px;
+}
+.connection .container form fieldset .file-input,
+.register .container form fieldset .file-input {
+  color: transparent;
+}
+.connection .container form fieldset .file-input::-webkit-file-upload-button,
+.register .container form fieldset .file-input::-webkit-file-upload-button {
+  visibility: hidden;
+}
+.connection .container form fieldset .file-input::before,
+.register .container form fieldset .file-input::before {
+  content: "Choisir une image";
+  color: #023047;
+  display: inline-block;
+  padding: 5px;
+  border: 1px solid #023047;
+  border-radius: 3px;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 14px;
 }
 .connection .container form input[type=submit],
 .register .container form input[type=submit] {
+  display: block;
+  width: 250px;
+  margin: 5px auto 0;
+  padding: 5px 10px;
   border: none;
+  border-radius: 5px;
   background-color: #fb8500;
   color: white;
-  padding: 5px 10px;
-  border-radius: 5px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  font-size: 16px;
   text-transform: uppercase;
+  transition: background-color 0.4s ease-in-out;
+}
+.connection .container form input[type=submit]:hover,
+.register .container form input[type=submit]:hover {
+  background-color: #c86a00;
+}
+.connection .container .register-link,
+.connection .container .login-link,
+.register .container .register-link,
+.register .container .login-link {
+  margin-top: 10px;
+  text-align: center;
+}
+.connection .container .register-link a,
+.connection .container .login-link a,
+.register .container .register-link a,
+.register .container .login-link a {
+  color: #023047;
+}
+.connection .container .register-link a:hover,
+.connection .container .login-link a:hover,
+.register .container .register-link a:hover,
+.register .container .login-link a:hover {
+  color: #219ebc;
 }
 
 /*# sourceMappingURL=style.css.map */

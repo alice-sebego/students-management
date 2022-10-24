@@ -26,7 +26,7 @@ $title = "Connexion";
                 </fieldset>
                 <input type="submit" name="submit" value="Me connecter">
             </form>
-            <p class="register">Pas de compte ? <a href="register.php" title="inscrivez-vous">Inscrivez-vous</a></p>
+            <p class="register-link">Pas de compte ? <a href="register.php" title="inscrivez-vous">Inscrivez-vous</a></p>
             <?php if(isset($_SESSION['feedback-login']) && !empty($_SESSION['feedback-login'])): ?>    
             <p class="failed">
             <?php echo $_SESSION['feedback-login']; ?>    
