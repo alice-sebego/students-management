@@ -210,11 +210,14 @@ table tbody tr:hover {
 table tbody tr td {
   padding: 3px 5px;
 }
-table tbody tr td.picture {
-  width: 45px;
+table tbody tr td.picture img {
+  width: 25px;
 }
 table tbody tr td.address {
   font-size: 12px;
+}
+table tbody tr td.email {
+  font-size: 15px;
 }
 table tbody tr td.email a {
   color: #023047;

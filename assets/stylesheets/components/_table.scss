@@ -27,14 +27,17 @@ table {
         padding: 3px 5px;
 
         &.picture {
-          width: 45px;
+          img {
+            width: 25px;
+          }
         }
-  
+
         &.address {
           font-size: 12px;
         }
-  
+
         &.email {
+          font-size: 15px;
           a {
             color: $dark-blue;
             &:hover {
@@ -42,7 +45,7 @@ table {
             }
           }
         }
-  
+
         &.update,
         &.delete {
           text-align: center;

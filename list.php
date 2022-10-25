@@ -35,16 +35,19 @@ $title = "Liste des étudiants";
                     $nbStudent = $queryGet->num_rows;
                     if($nbStudent > 0){
                         while($row = $queryGet->fetch_array()){
+                            $pict = $row['picture'];
+                            $profile = strlen($pict) > 0 ? "<img src='assets/images/profile/$pict' alt=''>" : "<img src='assets/images/profile/person_default.png'/>" ;
+                            $username = $row['firstname'];
                             echo "
                             <tr>
-                                <td>". strlen($row['picture'])  ."</td>
-                                <td>". $row['firstname']."</td>
+                                <td class='picture'>". $profile ."</td>
+                                <td>". $username ."</td>
                                 <td>". strtoupper($row['lastname']) ."</td>
                                 <td class='address'>". $row['address'] ."</td>
                                 <td>". $row['telephone'] ."</td>
                                 <td class='email'><a href='mailto:". $row['email'] ."'>". $row['email'] ."</a></td>
-                                <td class='update'><a href='update.php?id=". $row['id'] ."' title='Modifier ". $row['firstname'] ."'><img src='./assets/images/edit.svg'></a></td>
-                                <td class='delete'><a href='delete.php?id=". $row['id'] ."' title='Supprimer ". $row['firstname'] ."'><img src='./assets/images/delete.svg'></a></td>
+                                <td class='update'><a href='update.php?id=". $row['id'] ."' title='Modifier ". $username ."'><img src='./assets/images/edit.svg'></a></td>
+                                <td class='delete'><a href='delete.php?id=". $row['id'] ."' title='Supprimer ". $username ."'><img src='./assets/images/delete.svg'></a></td>
                             </tr>      
                             ";
                         }
