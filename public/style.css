@@ -213,11 +213,14 @@ table tbody tr td {
 table tbody tr td.picture img {
   width: 25px;
 }
+table tbody tr td.firstname, table tbody tr td.lastname, table tbody tr td.phone {
+  font-size: 14px;
+}
 table tbody tr td.address {
   font-size: 12px;
 }
 table tbody tr td.email {
-  font-size: 15px;
+  font-size: 14px;
 }
 table tbody tr td.email a {
   color: #023047;

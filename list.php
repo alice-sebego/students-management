@@ -30,6 +30,7 @@ $title = "Liste des étudiants";
                     </thead>
                     <tbody>
                     <?php
+                    require 'inc/utils.php';
                     $reqGet = "SELECT * FROM students ORDER BY lastname";
                     $queryGet = $mysqli->query($reqGet);
                     $nbStudent = $queryGet->num_rows;
@@ -38,13 +39,14 @@ $title = "Liste des étudiants";
                             $pict = $row['picture'];
                             $profile = strlen($pict) > 0 ? "<img src='assets/images/profile/$pict' alt=''>" : "<img src='assets/images/profile/person_default.png'/>" ;
                             $username = $row['firstname'];
+                            $phoneNumber = formatPhoneNumber($row['telephone']);
                             echo "
                             <tr>
                                 <td class='picture'>". $profile ."</td>
-                                <td>". $username ."</td>
-                                <td>". strtoupper($row['lastname']) ."</td>
+                                <td class='firstname'>". $username ."</td>
+                                <td class='lastname'>". strtoupper($row['lastname']) ."</td>
                                 <td class='address'>". $row['address'] ."</td>
-                                <td>". $row['telephone'] ."</td>
+                                <td class='phone'>". $phoneNumber ."</td>
                                 <td class='email'><a href='mailto:". $row['email'] ."'>". $row['email'] ."</a></td>
                                 <td class='update'><a href='update.php?id=". $row['id'] ."' title='Modifier ". $username ."'><img src='./assets/images/edit.svg'></a></td>
                                 <td class='delete'><a href='delete.php?id=". $row['id'] ."' title='Supprimer ". $username ."'><img src='./assets/images/delete.svg'></a></td>

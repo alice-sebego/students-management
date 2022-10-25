@@ -32,12 +32,18 @@ table {
           }
         }
 
+        &.firstname,
+        &.lastname,
+        &.phone {
+          font-size: 14px;
+        }
+
         &.address {
           font-size: 12px;
         }
 
         &.email {
-          font-size: 15px;
+          font-size: 14px;
           a {
             color: $dark-blue;
             &:hover {
